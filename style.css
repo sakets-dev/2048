@@ -1,7 +1,7 @@
 body { 
     font-family:Arial, Helvetica, sans-serif;
     
-    background-color: #e5e8d2;
+    background-color: #E5DCC9;
 }
 
 #board { 
@@ -23,7 +23,8 @@ h1 {
 
 #title { 
     font-size: 3.5rem;
-    color: #50473c;
+    color: #4b4435;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .tile { 
@@ -46,8 +47,8 @@ h1 {
     align-items: center;
     max-width: 600px;
     font-size: 10px;
-    margin-left: calc((97vw - 400px) / 2); /* Calculate margin based on board width */
-    margin-right: calc((97vw - 400px) / 2); /* Adjust for margin-right if needed */
+    margin-left: calc((97vw - 400px) / 2); 
+    margin-right: calc((97vw - 400px) / 2); 
 }
 
 .score-container h2 {
@@ -71,15 +72,24 @@ button:hover {
     color: black;
 }
 
-hr { 
-    display: block;
-    background-color: #99afaf41;
-    height: 0.5rem;
-    width: 700px;
-    border-radius: 10px;
-    border-width: 0px;
+.explain {
+    text-align: left;
+    margin-left: calc((97vw - 400px) / 2); 
+    margin-right: calc((97vw - 400px) / 2);
+    max-width: 600px;
+    font-weight: bold;
+    margin-top: 20px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
+.explain h3 {
+    color: #50473c; 
+}
 
+.explain p {
+    color: #313131a0; 
+    text-align: justify;
+    font-size: 12px; 
 }
 
 

@@ -1,0 +1,136 @@
+body { 
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #e5e8d2;
+}
+
+#board { 
+    width: 400px;
+    height: 400px;
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; /* Add position relative to allow absolute positioning of tiles */
+}
+
+.tile { 
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: transform 0.2s ease; /* Add transition for smooth sliding */
+}
+
+#title { 
+    font-size: 3rem;
+    color: #50473c;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    font-size: 10px;
+    margin: 0 auto; /* Centers the container */
+}
+.score-container h2 {
+    margin: 0; /* Remove default margin */
+}
+button {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    border: none; 
+    padding: 7.5px 15px;
+    border-radius: 10px;
+    font-size: 10px; 
+    background-color: rgba(207, 207, 207, 0.602);
+    color: rgb(0, 0, 0);
+}
+button:hover { 
+    background-color: white;
+    color: black;
+}
+
+hr { 
+    display: block;
+    background-color: #99afaf41;
+    height: 0.5rem;
+    width: 700px;
+    border-radius: 10px;
+    border-width: 0px;
+
+
+}
+
+
+.x2 { 
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x4 { 
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #f4b17a;
+    color: white;
+}
+.x16 {
+    background-color: #f59575;
+    color: white;
+}
+
+.x32 {
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x64 { 
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x128 {
+    background-color: #edce71;
+    color: white;
+}
+
+.x256 {
+    background-color: #edcc63;
+    color: white;
+}
+
+.x512 {
+    background-color: #edc651;
+    color: white;
+}
+
+.x1024 {
+    background-color: #eec744;
+    color: white;
+}
+
+.x2048 {
+    background-color: #ecc230;
+    color: white;
+}
+
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
+}

@@ -1,6 +1,6 @@
 body { 
     font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
+    
     background-color: #e5e8d2;
 }
 
@@ -13,6 +13,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative; /* Add position relative to allow absolute positioning of tiles */
+}
+
+h1 {
+    text-align: left;
+    margin-left: calc((97vw - 400px) / 2);
+    margin-right: calc((97vw - 400px) / 2);
+}
+
+#title { 
+    font-size: 3.5rem;
+    color: #50473c;
 }
 
 .tile { 
@@ -28,10 +39,6 @@ body {
     transition: transform 0.2s ease; /* Add transition for smooth sliding */
 }
 
-#title { 
-    font-size: 3rem;
-    color: #50473c;
-}
 
 .score-container {
     display: flex;
@@ -39,13 +46,16 @@ body {
     align-items: center;
     max-width: 600px;
     font-size: 10px;
-    margin: 0 auto; /* Centers the container */
+    margin-left: calc((97vw - 400px) / 2); /* Calculate margin based on board width */
+    margin-right: calc((97vw - 400px) / 2); /* Adjust for margin-right if needed */
 }
+
 .score-container h2 {
     margin: 0; /* Remove default margin */
 }
+
 button {
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border: none; 
     padding: 7.5px 15px;
@@ -54,6 +64,8 @@ button {
     background-color: rgba(207, 207, 207, 0.602);
     color: rgb(0, 0, 0);
 }
+
+
 button:hover { 
     background-color: white;
     color: black;
